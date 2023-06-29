@@ -5,7 +5,12 @@ const adminApp = require('../models/adminApp');
 const Cuenta = require('../models/cuenta');
 const TipoDeCuenta = require('../models/tipoDeCuenta');
 const Transacciones = require('../models/transacciones');
-
+const prueba = async (req, res) => {
+    return res.json({
+        msg: 'get Api - Controlador Admin',
+        
+    });
+}
 const adminAppDefCreate = async (req, res) => {
     try {
         let newAdminApp = new adminApp();
@@ -144,5 +149,6 @@ module.exports = {
     deleteAdmin,
     adminAppDefCreate,
     postTransferencia,
-    getClienteS
+    getClienteS,
+    prueba
 }
