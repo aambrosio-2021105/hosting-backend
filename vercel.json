@@ -1,0 +1,20 @@
+{
+    "version": 2,
+    "builds": [
+      {
+        "src": "./index.js",
+        "use": "@vercel/node"
+      }
+    ],
+    "routes": [
+      {
+        "src": "/(.*)",
+        "dest": "/"
+      }
+    ],
+    "env": {
+      "PORT": "8080",
+      "MONGODB_CNN": "mongodb+srv://josueambrosio:gestor-proyecto@cluster0.ir4b3rz.mongodb.net/?retryWrites=true&w=majority",
+      "SECRET_KEY_FOR_TOKEN":"SECRET_KEY"
+    }
+  }

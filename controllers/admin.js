@@ -7,7 +7,7 @@ const TipoDeCuenta = require('../models/tipoDeCuenta');
 const Transacciones = require('../models/transacciones');
 const prueba = async (req, res) => {
     return res.json({
-        msg: 'get Api - Controlador Admin',
+        msg: 'get Api - Controlador Admin'
         
     });
 }
